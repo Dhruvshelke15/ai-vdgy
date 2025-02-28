@@ -15,7 +15,7 @@ function Sidebar() {
     {
       id: 2,
       name: 'Create New',
-      path: '/create-new',
+      path: '/dashboard/create-new',
       icon: FileVideo,
     },
     {
