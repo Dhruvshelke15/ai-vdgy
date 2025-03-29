@@ -12,7 +12,7 @@ import React, { useState } from 'react';
 function SelectTopic({ onUserSelect }) {
   const options = [
     'Custom Prompt',
-    'Random AI Story',
+    'Random Story',
     'Scary Story',
     'Fantasy World',
     'Bedtime Story',
