@@ -15,6 +15,7 @@ function CreateNew() {
   const [formData, setFormData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [videoScript, setVideoScript] = useState();
+  const [audioUrl, setAudioUrl] = useState();
 
   const onHandleInputChange = (fieldName, fieldValue) => {
     console.log(fieldName, fieldValue);
@@ -71,6 +72,7 @@ function CreateNew() {
       })
       .then(res => {
         console.log(res.data);
+        setAudioUrl(res.data.result);
       });
 
     setLoading(false);
